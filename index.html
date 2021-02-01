@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Original Author: George Francis - https://codepen.io/georgedoescode/pen/XWNWeYP?editors=1010-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewbox Glitch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg viewBox = '0 0 200 200'>
+        <defs>
+            <linearGradient id='sunGradient' gradientTransform='rotate(90)'>
+                <stop offset="0%" stop-color="#ffd319" />
+                <stop offset="100%" stop-color="#ff2975" />
+            </linearGradient>
+            <filter id="shadow">
+                <feDropShadow dx="0.2" dy="6" stdDeviation="5" flood-color="var(--pink)" flood-capacity="0.3" />
+                <feDropShadow dx="0.2" dy="-6" stdDeviation="5" flood-color="var(--yellow)" flood-capacity="0.3" />
+            </filter>
+        </defs>
+    </svg>
+    <script src="app.js" type='module'></script>
+</body>
+</html> 

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: hsl(49, 100%, 55%);
+    --pink: hsl(339, 100%, 58%);
+    --pink-light: hsl(339, 100%, 88%);
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(#180036, #240152);
+}
+
+svg {
+    width: 75vmin;
+    height: 75vmin;
+    max-width: 480px;
+    max-height: 480px;
+    transform: translate3d(0px, 0px, 0px);
+}
